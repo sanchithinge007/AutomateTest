@@ -7,6 +7,7 @@ public class Login {
 
 	@Given("open the demo website")
 	public void open_the_demo_website() {
+		
 	    System.out.println("Hi");
 	}
 
