@@ -1,5 +1,6 @@
 package StepDefination;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,7 +19,9 @@ public class Login {
 
 	@Then("enter userid {string} and password {string}")
 	public void enter_userid_and_password(String string, String string2) {
-	    driver.get("https://practice.expandtesting.com/register");
+	    driver.get("https://practice.expandtesting.com/register");    
+	    driver.findElement(By.xpath("//input[@id='username']")).sendKeys("sanchit");
+	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Hinge");
 	    try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
