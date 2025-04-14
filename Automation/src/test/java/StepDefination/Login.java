@@ -21,7 +21,7 @@ public class Login {
 	public void enter_userid_and_password(String string, String string2) {
 	    driver.get("https://practice.expandtesting.com/register");    
 	    driver.findElement(By.xpath("//input[@id='username']")).sendKeys("sanchit");
-	    driver.findElement(By.xpath("//input[@id='passwor']")).sendKeys("Hinge");
+	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Hinge");
 	    try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
