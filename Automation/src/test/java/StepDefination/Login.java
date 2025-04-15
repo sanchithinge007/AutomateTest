@@ -34,8 +34,8 @@ public class Login {
 	    try {
 	    	driver.get("https://practice.expandtesting.com/register");
 		    LOW_LEVEL_LOGGER.info("Hi");
-		    driver.findElement(By.xpath("//input[@id='username']")).sendKeys("sanchit");
-		    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Hinge");
+		    driver.findElement(By.xpath("//input[@id='username']")).sendKeys(string);
+		    driver.findElement(By.xpath("//input[@id='password']")).sendKeys(string2);
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -52,7 +52,11 @@ public class Login {
 			}
         }
 	}
-
+	@Then("run")
+	public void run() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
 	@Then("click on logout")
 	public void click_on_logout() {
 	   System.out.println("Logout");
